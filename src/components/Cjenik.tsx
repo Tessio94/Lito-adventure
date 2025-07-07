@@ -1,18 +1,20 @@
+import Image from "next/image";
 import React from "react";
 
 const Cjenik = () => {
 	return (
-		<section className="pt-20 max-w-[50%] m-auto flex justify-between items-start">
+		<section className="relative pt-20 max-w-[50%] m-auto flex justify-between items-start">
 			<div className="w-[200px] mb-10">
 				<h3 className="text-color1 text-5xl mb-10 tracking-wide">Pricing</h3>
 				<div className="flex items-center justify-between text-2xl border-[2px] border-color1 border-b-0 py-2 px-10 rounded-t-2xl bg-color1/30">
-					<p className="">Price:</p>
+					<p className="">*Price:</p>
 					<p>25€</p>
 				</div>
 				<div className="flex justify-between items-center  text-2xl border-[2px] border-color1 py-2 px-10 rounded-b-2xl bg-color1/30">
 					<p>Duration:</p>
 					<p>1h</p>
 				</div>
+				<p className="italic text-lg">*per person</p>
 			</div>
 			<div className="w-[400px]">
 				<h5 className="text-color1 text-5xl mb-3 tracking-wide">Slots</h5>
@@ -50,6 +52,13 @@ const Cjenik = () => {
 					6th Slot: 18:40-20:10
 				</div>
 			</div>
+			<Image
+				className="absolute rotate-45 bottom-20 left-[-250px]"
+				src="/bicikla-cover.png"
+				width={457}
+				height={457}
+				alt="bicikla icon"
+			/>
 		</section>
 	);
 };
