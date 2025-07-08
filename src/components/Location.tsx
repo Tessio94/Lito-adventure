@@ -2,8 +2,8 @@ import React from "react";
 
 const Location = () => {
 	return (
-		<section className="pt-20">
-			<h5 className="text-color1 text-5xl mb-3 px-[20px] py-3 sm:px-[50px] lg:px-[60px] 2xl:px-[160px] tracking-wide">
+		<section id="location" className="pt-20">
+			<h5 className="text-color1 text-5xl mb-3 px-[20px] py-3 sm:px-[40px] lg:px-[50px] 2xl:px-[160px] tracking-wide">
 				Location
 			</h5>
 			<div className="w-full">

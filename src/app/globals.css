@@ -39,6 +39,12 @@ body {
 	font-family: Arial, Helvetica, sans-serif;
 }
 
+@custom-variant 3xl {
+	@media (width > 1800px) {
+		@slot;
+	}
+}
+
 .map-marker::after {
 	content: "";
 	position: absolute;
@@ -54,4 +60,22 @@ body {
 
 .swiper-thumbs {
 	margin-left: 0px !important;
+}
+
+@media (max-width: 1535px) {
+	.map-marker::after {
+		bottom: -73px;
+		border-left: 53px solid transparent;
+		border-right: 53px solid transparent;
+		border-top: 100px solid #33c2df;
+	}
+}
+
+@media (max-width: 1279px) {
+	.map-marker::after {
+		bottom: -73px;
+		border-left: 36px solid transparent;
+		border-right: 36px solid transparent;
+		border-top: 90px solid #33c2df;
+	}
 }

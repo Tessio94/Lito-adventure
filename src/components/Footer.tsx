@@ -5,7 +5,7 @@ import { CiFacebook, CiInstagram } from "react-icons/ci";
 
 const Footer = () => {
 	return (
-		<footer className="bg-color2/10 z-10 flex w-full max-w-[1920px] items-center justify-between px-[20px] py-5 sm:px-[50px] lg:px-[60px] 2xl:px-[160px]">
+		<footer className="bg-color2/10 z-10 flex xl:flex-row flex-col gap-8 w-full max-w-[1920px] items-center justify-between px-[20px] py-5 sm:px-[40px] lg:px-[50px] 2xl:px-[160px]">
 			<Link href="/">
 				<Image
 					className=""
@@ -15,6 +15,9 @@ const Footer = () => {
 					height={243}
 				/>
 			</Link>
+			<div className="text-color1 order-1 xl:order-0">
+				Copyright © 2025 Lito Adventure - All Rights Reserved.
+			</div>
 			<div className="flex flex-col gap-4">
 				<p className="text-2xl text-color1">
 					<span className="text-color2">Location: </span>Ul. Dinka Šimunovića 9,

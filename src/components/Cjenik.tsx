@@ -3,7 +3,10 @@ import React from "react";
 
 const Cjenik = () => {
 	return (
-		<section className="relative pt-20 max-w-[50%] m-auto flex justify-between items-start">
+		<section
+			id="pricing"
+			className="relative pt-20 px-[20px] sm:px-[40px] lg:px-0 lg:max-w-[70%] 2xl:max-w-[50%] m-auto flex flex-col md:flex-row justify-between items-start"
+		>
 			<div className="w-[200px] mb-10">
 				<h3 className="text-color1 text-5xl mb-10 tracking-wide">Pricing</h3>
 				<div className="flex items-center justify-between text-2xl border-[2px] border-color1 border-b-0 py-2 px-10 rounded-t-2xl bg-color1/30">
@@ -53,7 +56,7 @@ const Cjenik = () => {
 				</div>
 			</div>
 			<Image
-				className="absolute rotate-45 bottom-20 left-[-250px]"
+				className="lg:block hidden absolute rotate-45 bottom-20 left-[-150px] xl:left-[-180px] 2xl:left-[-250px]"
 				src="/bicikla-cover.png"
 				width={457}
 				height={457}
