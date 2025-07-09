@@ -9,25 +9,16 @@ import React, { useEffect, useRef, useState } from "react";
 import { CiFacebook, CiInstagram, CiMobile3 } from "react-icons/ci";
 
 const Header = () => {
-  const [scrolled, setScrolled] = useState(false);
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [hambActive, setHambActive] = useState(false);
   const [showSidebar, setShowSidebar] = useState(false);
-
+  console.log(hambActive);
   const hash = useHashChange();
 
   const pathname = usePathname();
   console.log(pathname);
 
   const hamb = useRef<HTMLDivElement | null>(null);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 0);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
 
   useEffect(() => {
     const handleHambClick = () => {
@@ -161,8 +152,7 @@ const Header = () => {
       </div>
       <nav
         className={cn(
-          "xsm:w-[260px] from-color1 to-color2 fixed top-[112px] bottom-0 left-0 z-50 flex w-[300px] flex-col justify-between bg-gradient-to-t py-12 shadow-lg transition-all duration-300 sm:w-[330px] lg:hidden",
-          scrolled ? "top-0" : "top-[112px]",
+          "xxsm:w-[260px] from-color1 to-color2 fixed top-0 bottom-0 left-0 z-50 flex w-[300px] flex-col justify-between bg-gradient-to-t py-12 shadow-lg transition-all duration-300 sm:w-[330px] lg:hidden",
           showSidebar ? "translate-x-0" : "translate-x-[-100%]",
         )}
       >

@@ -1,6 +1,8 @@
 import Image from "next/image";
 import React from "react";
 
+import * as motion from "motion/react-client";
+
 const Cjenik = () => {
   return (
     <section
@@ -55,13 +57,19 @@ const Cjenik = () => {
           6th Slot: 18:40-20:10
         </div>
       </div>
-      <Image
+      <motion.div
         className="absolute bottom-20 left-[-150px] hidden rotate-45 lg:block xl:left-[-180px] 2xl:left-[-250px]"
-        src="/bicikla-cover.png"
-        width={457}
-        height={457}
-        alt="bicikla icon"
-      />
+        initial={{ x: -200 }}
+        whileInView={{ x: 0, transition: { duration: 0.5 } }}
+        viewport={{ once: true, amount: 0.9 }}
+      >
+        <Image
+          src="/bicikla-cover.png"
+          width={457}
+          height={457}
+          alt="bicikla icon"
+        />
+      </motion.div>
     </section>
   );
 };

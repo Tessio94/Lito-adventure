@@ -51,6 +51,12 @@ body {
   }
 }
 
+@custom-variant xxsm {
+  @media (width < 500px) {
+    @slot;
+  }
+}
+
 .map-marker::after {
   content: "";
   position: absolute;
