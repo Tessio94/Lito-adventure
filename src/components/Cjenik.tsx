@@ -61,7 +61,7 @@ const Cjenik = () => {
         className="absolute bottom-20 left-[-150px] hidden rotate-45 lg:block xl:left-[-180px] 2xl:left-[-250px]"
         initial={{ x: -200 }}
         whileInView={{ x: 0, transition: { duration: 0.5 } }}
-        viewport={{ once: true, amount: 0.9 }}
+        viewport={{ once: true, amount: 0.9, margin: "0px 0px 0px 300px" }}
       >
         <Image
           src="/bicikla-cover.png"
