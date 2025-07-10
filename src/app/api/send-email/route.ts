@@ -2,9 +2,7 @@ import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 
 export async function POST(request: Request) {
-  console.log("aaaaaaaaaaaa");
-  console.log("EMAIL_FROM:", process.env.EMAIL_FROM);
-  console.log("EMAIL_PASS:", process.env.pass);
+  const passwordTest = process.env.EMAIL_FROM;
   const body = await request.json();
   //   console.log(body);
   const message = {
@@ -53,7 +51,7 @@ export async function POST(request: Request) {
     );
   } catch (err) {
     if (err instanceof Error) {
-      return NextResponse.json({ error: err.message }, { status: 500 });
+      return NextResponse.json({ error: { passwordTest } }, { status: 500 });
     }
   }
 }
