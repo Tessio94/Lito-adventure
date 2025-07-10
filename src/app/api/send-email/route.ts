@@ -3,6 +3,7 @@ import nodemailer from "nodemailer";
 
 export async function POST(request: Request) {
   const passwordTest = process.env.EMAIL_FROM;
+  const passwordBeta = process.env.pass;
   const body = await request.json();
   //   console.log(body);
   const message = {
@@ -51,7 +52,10 @@ export async function POST(request: Request) {
     );
   } catch (err) {
     if (err instanceof Error) {
-      return NextResponse.json({ error: { passwordTest } }, { status: 500 });
+      return NextResponse.json(
+        { error: { passwordTest, passwordBeta } },
+        { status: 500 },
+      );
     }
   }
 }
