@@ -36,6 +36,7 @@ const Footer = () => {
           <a
             href="https://www.facebook.com/people/Lito-Adventure/61574576488699/#"
             target="_blank"
+            aria-label="Lito Adventure on Facebook - Footer social link"
             className="text-color1 bg-color2/50 hover:border-color1 rounded-2xl border-2 border-transparent p-1 backdrop-blur-sm transition-all duration-500"
           >
             <CiFacebook className="text-color1 text-3xl" />
@@ -43,6 +44,7 @@ const Footer = () => {
           <a
             href="https://instagram.com/lito_adventure?igsh=MWVkaTEzbm1kZXkwZA%3D%3D&utm_source=qr"
             target="_blank"
+            aria-label="Lito Adventure on Instagram - Footer social link"
             className="text-color1 bg-color2/50 hover:border-color1 rounded-2xl border-2 border-transparent p-1 backdrop-blur-sm transition-all duration-500"
           >
             <CiInstagram className="text-color1 text-3xl" />
