@@ -35,6 +35,33 @@ export const metadata: Metadata = {
   icons: {
     icon: "/header-logo.svg",
   },
+  openGraph: {
+    title: "Lito bike tours • Zadar",
+    description: "Discover Zadar like never before with our guided bike tours!",
+    url: "https://lito-adventure.com",
+    images: [
+      {
+        url: "https://lito-adventure.com/cover2.jpg",
+        width: 1920,
+        height: 1080,
+        alt: "Grad Zadar",
+      },
+    ],
+    type: "website",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: false,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
 };
 
 export default function RootLayout({
