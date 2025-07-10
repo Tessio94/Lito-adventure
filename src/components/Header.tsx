@@ -4,7 +4,6 @@ import useHashChange from "@/lib/hooks";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import React, { useEffect, useRef, useState } from "react";
 import { CiFacebook, CiInstagram, CiMobile3, CiMail } from "react-icons/ci";
 
@@ -14,9 +13,6 @@ const Header = () => {
   const [showSidebar, setShowSidebar] = useState(false);
   console.log(hambActive);
   const hash = useHashChange();
-
-  const pathname = usePathname();
-  console.log(pathname);
 
   const hamb = useRef<HTMLDivElement | null>(null);
 
