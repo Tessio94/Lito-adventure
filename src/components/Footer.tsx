@@ -6,7 +6,7 @@ import { CiFacebook, CiInstagram } from "react-icons/ci";
 const Footer = () => {
   return (
     <footer className="bg-color2/10 z-10 flex w-full max-w-[1920px] flex-col items-center justify-between gap-8 px-[20px] py-5 sm:px-[40px] lg:px-[50px] xl:flex-row 2xl:px-[160px]">
-      <Link href="/">
+      <a href="#">
         <Image
           className=""
           src="/footer-logo.svg"
@@ -14,7 +14,7 @@ const Footer = () => {
           width={150}
           height={243}
         />
-      </Link>
+      </a>
       <div className="text-color1 order-1 text-center xl:order-0">
         Copyright © 2025 Lito Adventure - All Rights Reserved.
       </div>
