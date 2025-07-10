@@ -7,8 +7,7 @@ const Kontakt = () => {
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-  console.log("EMAIL_FROM:", process.env.EMAIL_FROM);
-  console.log("EMAIL_PASS:", process.env.pass);
+
   const onFormSubmitted = async (e: React.FormEvent) => {
     e.preventDefault();
     const res = await fetch("/api/send-email", {
