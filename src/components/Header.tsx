@@ -6,7 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React, { useEffect, useRef, useState } from "react";
-import { CiFacebook, CiInstagram, CiMobile3 } from "react-icons/ci";
+import { CiFacebook, CiInstagram, CiMobile3, CiMail } from "react-icons/ci";
 
 const Header = () => {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -118,7 +118,7 @@ const Header = () => {
             className="text-color1 flex cursor-pointer items-center gap-1 text-2xl font-bold tracking-wider capitalize xl:gap-3"
           >
             <CiMobile3 className="text-color1 text-3xl" />
-            +095 876 1857
+            095 876 1857
           </a>
         </div>
         <div className="flex items-center justify-center gap-4">
@@ -194,10 +194,19 @@ const Header = () => {
           <div className="bg-color2/90 hover:border-color1 border-2 border-transparent px-1 py-1 backdrop-blur-sm transition-all duration-500 xl:px-2">
             <a
               href="tel:+095 876 1857"
-              className="flex cursor-pointer items-center gap-1 text-2xl font-bold tracking-wider text-white capitalize xl:gap-3"
+              className="flex cursor-pointer items-center gap-1 text-xl tracking-wider text-white capitalize xl:gap-3"
             >
               <CiMobile3 className="text-3xl text-white" />
-              +095 876 1857
+              095 876 1857
+            </a>
+          </div>
+          <div className="bg-color2/90 hover:border-color1 border-2 border-transparent px-1 py-1 backdrop-blur-sm transition-all duration-500 xl:px-2">
+            <a
+              href="mailto:dinodokozanikpalj@gmail.com"
+              className="flex cursor-pointer items-center gap-1 text-lg tracking-wider text-white xl:gap-3"
+            >
+              <CiMail className="text-3xl text-white" />
+              Dinodokoza@icloud.com
             </a>
           </div>
           <div className="flex items-center justify-center gap-4">

@@ -27,7 +27,6 @@ const Footer = () => {
           <span className="text-color2">Mail: </span>
           <a
             href="mailto:dinodokozanikpalj@gmail.com"
-            target="_blank"
             className="after:bg-color2 relative after:absolute after:top-[100%] after:right-[100%] after:left-0 after:h-[2px] after:transition-all after:duration-500 after:content-[''] hover:after:right-0"
           >
             Dinodokoza@icloud.com
