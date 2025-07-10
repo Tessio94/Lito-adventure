@@ -38,7 +38,7 @@ const Cover = () => {
         </motion.p>
         <motion.a
           href="#tours"
-          className="bg-color1 group xsm:py-2 flex cursor-pointer items-center gap-3 rounded-2xl border-2 border-transparent px-5 py-1 text-2xl text-white transition-all duration-500 hover:border-white xl:text-3xl"
+          className="bg-color1 group xsm:py-2 flex cursor-pointer items-center gap-3 rounded-2xl border-2 border-transparent px-5 py-1 text-2xl text-white transition-all duration-200 hover:border-white focus:border-white active:border-white lg:duration-500 xl:text-3xl"
           initial={{ y: 50, opacity: 0 }}
           animate={{
             y: 0,
@@ -47,7 +47,7 @@ const Cover = () => {
           }}
         >
           More info{" "}
-          <FaArrowDown className="transition-all duration-500 group-hover:translate-y-[4px]" />
+          <FaArrowDown className="transition-all duration-200 group-hover:translate-y-[4px] group-focus:translate-y-[4px] group-active:translate-y-[4px] lg:duration-500" />
         </motion.a>
       </div>
 
