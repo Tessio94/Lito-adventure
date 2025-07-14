@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   description:
     "Discover Zadar like never before with our guided bike tours! We're a team of young, enthusiastic locals passionate about combining outdoor adventure with unforgettable sightseeing experiences.",
   icons: {
-    icon: "/header-logo.svg",
+    icon: "/Lito-vertikalno 2.svg",
   },
   openGraph: {
     title: "Lito bike tours • Zadar",
