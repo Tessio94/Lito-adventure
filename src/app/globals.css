@@ -121,6 +121,10 @@ body {
   margin-left: 0px !important;
 }
 
+.swiper-slide-thumb-active img {
+  border: 3px solid var(--color1);
+}
+
 @media (max-width: 1535px) {
   .map-marker::after {
     bottom: -73px;
