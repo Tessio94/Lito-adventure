@@ -9,14 +9,14 @@ const Main = () => {
       id="tours"
       className="px-[20px] pt-20 sm:px-[40px] lg:px-[50px] 2xl:px-[160px]"
     >
-      <motion.h1
+      <motion.h2
         className="text-color1 mb-3 text-5xl tracking-wide"
         initial={{ x: -100 }}
         whileInView={{ x: 0, transition: { duration: 0.3 } }}
         viewport={{ once: true }}
       >
         Lito-adventure bike tours
-      </motion.h1>
+      </motion.h2>
       <div className="flex flex-col items-start justify-between gap-10 lg:flex-row">
         <motion.div className="flex flex-col items-start gap-5 text-2xl lg:max-w-[40%] lg:basis-[40%]">
           <motion.p

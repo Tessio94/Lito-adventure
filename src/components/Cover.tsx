@@ -19,13 +19,13 @@ const Cover = () => {
         height={1080}
       />
       <div className="bg-color2/40 xsm:gap-4 xsm:p-5 absolute top-[45%] left-[5%] z-0 flex w-[90%] flex-col items-start gap-3 rounded-2xl p-3 backdrop-blur-md sm:left-[20%] sm:w-[60%] lg:top-[35%] lg:left-[80px] lg:w-[500px] xl:top-[35%] xl:left-[100px] xl:w-[550px] xl:gap-8 2xl:top-[40%] 2xl:w-[650px]">
-        <motion.h2
+        <motion.h1
           className="text-color1 text-4xl font-extrabold tracking-widest uppercase xl:text-5xl"
           initial={{ y: -100, opacity: 0 }}
           animate={{ y: 0, opacity: 1, transition: { duration: 0.3 } }}
         >
           Bike tours Zadar
-        </motion.h2>
+        </motion.h1>
         <motion.p
           className="font-lato text-2xl text-white xl:text-3xl"
           initial={{ x: -100, opacity: 0 }}
