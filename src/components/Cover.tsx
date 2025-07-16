@@ -126,7 +126,7 @@ const Cover = () => {
           </div>
         </motion.div>
         <motion.div
-          className="bg-color2 absolute top-[-10px] right-[-30px] flex h-[60px] w-[60px] items-center justify-center rounded-full xl:top-[-40px] xl:right-[-35px] xl:h-[100px] xl:w-[100px] xl:p-[10px] 2xl:top-[-100px]"
+          className="bg-color2 absolute top-[-10px] right-[-30px] flex h-[60px] w-[60px] items-center justify-center rounded-full xl:top-[-40px] xl:right-[-35px] xl:h-[80px] xl:w-[80px] xl:p-[10px] 2xl:top-[-100px]"
           initial={{ x: 100, opacity: 0 }}
           animate={{
             x: 0,
@@ -134,8 +134,8 @@ const Cover = () => {
             transition: { duration: 0.3, delay: 1 },
           }}
         >
-          <div className="rounded-full bg-white p-2 xl:p-4">
-            <FaLocationArrow className="text-color1 text-4xl xl:text-5xl" />
+          <div className="relative rounded-full bg-white p-[25px] xl:p-[31px]">
+            <FaLocationArrow className="text-color1 absolute top-[10px] left-[5px] text-4xl xl:text-5xl" />
           </div>
         </motion.div>
       </div>
@@ -207,8 +207,8 @@ const Cover = () => {
           transition: { duration: 0.3, delay: 0.4 },
         }}
       >
-        <div className="rounded-full bg-white p-2">
-          <FaLocationArrow className="text-color1 text-4xl" />
+        <div className="relative rounded-full bg-white p-[25px]">
+          <FaLocationArrow className="text-color1 absolute top-[10px] left-[5px] text-4xl" />
         </div>
       </motion.div>
     </div>
