@@ -12,6 +12,10 @@ import "swiper/css/thumbs";
 import { useState } from "react";
 import Image from "next/image";
 
+import { Fancybox } from "@fancyapps/ui";
+import "@fancyapps/ui/dist/fancybox/fancybox.css";
+import { useEffect } from "react";
+
 const gallery = [
   //   {
   //     url: "/zadar-cover.jpg",
@@ -23,40 +27,50 @@ const gallery = [
   },
   {
     url: "/bajlo2.jpg",
-    alt: "Vodič vodi turu",
+    alt: "Guide with group",
   },
   {
     url: "/bajlo3.jpg",
-    alt: "Punta Bajlo iz zraka",
+    alt: "Punta Bajlo from air",
   },
   {
     url: "/bajlo4.jpg",
-    alt: "Lito adventure tura iz zraka",
+    alt: "Fresh air and sea",
   },
   {
     url: "/bajlo5.jpg",
-    alt: "Zadar karma tura",
+    alt: "Zadar coastline",
   },
   {
     url: "/bajlo6.jpg",
-    alt: "Zadar karma tura",
+    alt: "Zadar karma tour",
   },
   {
     url: "/bajlo7.jpg",
-    alt: "Zadar karma tura",
+    alt: "Lito adventure bike group",
   },
   {
     url: "/bajlo8.jpg",
-    alt: "Zadar karma tura",
+    alt: "Lito adventure bike group",
   },
   {
     url: "/donat.jpg",
-    alt: "Donat i forum",
+    alt: "Donat i forum sightseeing",
   },
 ];
 
 const Gallery = () => {
   const [thumbsSwiper, setThumbsSwiper] = useState<SwiperType | null>(null);
+
+  useEffect(() => {
+    Fancybox.bind('[data-fancybox="gallery"]', {
+      // Optional config
+    });
+
+    return () => {
+      Fancybox.destroy();
+    };
+  }, []);
 
   return (
     <>
@@ -73,13 +87,34 @@ const Gallery = () => {
       >
         {gallery?.map((image, i) => (
           <SwiperSlide key={i} className="my-auto max-h-[70vh]">
-            <Image
-              src={image.url}
-              alt={image.alt}
-              width={1920}
-              height={1080}
-              className="rounded-xl bg-center object-contain"
-            />
+            <a
+              href={image.url}
+              data-fancybox="gallery"
+              data-caption={image.alt}
+              className="group relative block"
+            >
+              <Image
+                src={image.url}
+                alt={image.alt}
+                width={1920}
+                height={1080}
+                className="rounded-xl bg-center object-contain"
+              />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="text-color1 absolute top-3 right-3 h-10 w-10 rounded-2xl bg-white/70 p-2 transition-all duration-300 xl:opacity-0 xl:group-hover:opacity-100"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth={2}
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M15 3h6v6m0-6l-7 7m-3 11H3v-6m0 6l7-7"
+                />
+              </svg>
+            </a>
           </SwiperSlide>
         ))}
       </Swiper>
