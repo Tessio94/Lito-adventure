@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @import "@fancyapps/ui/dist/fancybox/fancybox.css";
+@import "./spinner.css";
 
 html {
   scroll-behavior: smooth;

@@ -22,14 +22,22 @@ const Cover = () => {
         <motion.h1
           className="text-color1 text-4xl font-extrabold tracking-widest uppercase xl:text-5xl"
           initial={{ y: -100, opacity: 0 }}
-          animate={{ y: 0, opacity: 1, transition: { duration: 0.3 } }}
+          animate={{
+            y: 0,
+            opacity: 1,
+            transition: { duration: 0.3, delay: 0.5 },
+          }}
         >
           Bike tours Zadar
         </motion.h1>
         <motion.p
           className="font-lato text-2xl text-white xl:text-3xl"
           initial={{ x: -100, opacity: 0 }}
-          animate={{ x: 0, opacity: 1, transition: { duration: 0.3 } }}
+          animate={{
+            x: 0,
+            opacity: 1,
+            transition: { duration: 0.3, delay: 0.5 },
+          }}
         >
           One of the best ways to spend a sunny summer day and to explore a new
           city is to go cycling. But what to do if you are a traveler visiting
@@ -43,7 +51,7 @@ const Cover = () => {
           animate={{
             y: 0,
             opacity: 1,
-            transition: { duration: 0.3 },
+            transition: { duration: 0.3, delay: 0.5 },
           }}
         >
           More info{" "}
@@ -55,7 +63,11 @@ const Cover = () => {
         <motion.div
           className="lg:h-[216px] lg:w-[350px] xl:h-[308px] xl:w-[500px] 2xl:h-[370px] 2xl:w-[600px]"
           initial={{ y: 100, opacity: 0 }}
-          animate={{ y: 0, opacity: 1, transition: { duration: 0.3 } }}
+          animate={{
+            y: 0,
+            opacity: 1,
+            transition: { duration: 0.3, delay: 0.4 },
+          }}
         >
           <Image
             src="/bicycle.png"

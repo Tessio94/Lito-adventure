@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import LoadingSpinner from "@/components/LoadingSpinner";
 
 const bangers = localFont({
   src: [
@@ -72,6 +73,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${bangers.className} ${lato.variable} antialiased`}>
+        <LoadingSpinner />
         {children}
       </body>
     </html>

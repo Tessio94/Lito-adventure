@@ -11,9 +11,13 @@ const Main = () => {
     >
       <motion.h2
         className="text-color1 mb-3 text-5xl tracking-wide"
-        initial={{ x: -100 }}
-        whileInView={{ x: 0, transition: { duration: 0.3 } }}
-        viewport={{ once: true }}
+        initial={{ x: -100, opacity: 0 }}
+        whileInView={{
+          x: 0,
+          opacity: 1,
+          transition: { duration: 0.3 },
+        }}
+        viewport={{ once: true, amount: 0.5 }}
       >
         Lito-adventure bike tours
       </motion.h2>
@@ -21,18 +25,18 @@ const Main = () => {
         <motion.div className="flex flex-col items-start gap-5 text-2xl lg:max-w-[40%] lg:basis-[40%]">
           <motion.p
             className="font-lato mb-5 text-3xl font-bold xl:text-4xl"
-            initial={{ x: -100 }}
-            whileInView={{ x: 0, transition: { duration: 0.3 } }}
-            viewport={{ once: true }}
+            initial={{ x: -100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1, transition: { duration: 0.3 } }}
+            viewport={{ once: true, amount: 0.5 }}
           >
             Discover Zadar in the most fun and active way—with our guided bike
             tours!
           </motion.p>
           <motion.p
             className="font-lato text-2xl xl:text-3xl"
-            initial={{ y: 100 }}
-            whileInView={{ y: 0, transition: { duration: 0.3 } }}
-            viewport={{ once: true }}
+            initial={{ y: 100, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1, transition: { duration: 0.3 } }}
+            viewport={{ once: true, amount: 0.5 }}
           >
             We’re a young, energetic team passionate about combining outdoor
             adventure with the rich history and beauty of our hometown. Our
@@ -42,9 +46,9 @@ const Main = () => {
           </motion.p>
           <motion.p
             className="font-lato text-2xl xl:text-3xl"
-            initial={{ y: 100 }}
-            whileInView={{ y: 0, transition: { duration: 0.3 } }}
-            viewport={{ once: true }}
+            initial={{ y: 100, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1, transition: { duration: 0.3 } }}
+            viewport={{ once: true, amount: 0.5 }}
           >
             {/* eslint-disable-next-line react/no-unescaped-entities */}
             Whether you're a seasoned cyclist or just looking for a unique
