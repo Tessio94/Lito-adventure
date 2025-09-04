@@ -59,6 +59,12 @@ body {
   }
 }
 
+@custom-variant 2xsm {
+  @media (width < 446px) {
+    @slot;
+  }
+}
+
 .map-marker::after {
   content: "";
   position: absolute;
